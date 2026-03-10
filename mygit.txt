@@ -1,0 +1,12 @@
+git clone https://github.com/tingyu940510-dotcom/GUI_Class_2026_N13310011.git
+
+git add .
+
+git config --global user.email "emailtingyu940510@gmail.com"
+
+git config --global user.name "tingyu940510-dotcom"
+
+git commit -m "20260310"
+
+git push -u origin main
+
