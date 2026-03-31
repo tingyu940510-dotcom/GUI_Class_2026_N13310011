@@ -30,6 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btn_ClickMe = new System.Windows.Forms.Button();
+            this.btn_ChangLabel = new System.Windows.Forms.Button();
+            this.lab_ChangeLabel = new System.Windows.Forms.Label();
+            this.lab_Counter = new System.Windows.Forms.Label();
+            this.btn_Counter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,6 +50,7 @@
             // btn_ClickMe
             // 
             this.btn_ClickMe.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_ClickMe.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_ClickMe.ForeColor = System.Drawing.Color.SeaShell;
             this.btn_ClickMe.Location = new System.Drawing.Point(12, 56);
             this.btn_ClickMe.Name = "btn_ClickMe";
@@ -55,15 +60,67 @@
             this.btn_ClickMe.UseVisualStyleBackColor = false;
             this.btn_ClickMe.Click += new System.EventHandler(this.btn_clickme_Click);
             // 
+            // btn_ChangLabel
+            // 
+            this.btn_ChangLabel.BackColor = System.Drawing.Color.Yellow;
+            this.btn_ChangLabel.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btn_ChangLabel.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.btn_ChangLabel.Location = new System.Drawing.Point(18, 139);
+            this.btn_ChangLabel.Name = "btn_ChangLabel";
+            this.btn_ChangLabel.Size = new System.Drawing.Size(125, 31);
+            this.btn_ChangLabel.TabIndex = 2;
+            this.btn_ChangLabel.Text = "按我切換標籤";
+            this.btn_ChangLabel.UseVisualStyleBackColor = false;
+            this.btn_ChangLabel.Click += new System.EventHandler(this.btn_ChangLabel_Click);
+            // 
+            // lab_ChangeLabel
+            // 
+            this.lab_ChangeLabel.AutoSize = true;
+            this.lab_ChangeLabel.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lab_ChangeLabel.ForeColor = System.Drawing.Color.Purple;
+            this.lab_ChangeLabel.Location = new System.Drawing.Point(149, 140);
+            this.lab_ChangeLabel.Name = "lab_ChangeLabel";
+            this.lab_ChangeLabel.Size = new System.Drawing.Size(88, 24);
+            this.lab_ChangeLabel.TabIndex = 3;
+            this.lab_ChangeLabel.Text = "label2";
+            // 
+            // lab_Counter
+            // 
+            this.lab_Counter.AutoSize = true;
+            this.lab_Counter.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lab_Counter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lab_Counter.Location = new System.Drawing.Point(149, 186);
+            this.lab_Counter.Name = "lab_Counter";
+            this.lab_Counter.Size = new System.Drawing.Size(23, 24);
+            this.lab_Counter.TabIndex = 5;
+            this.lab_Counter.Text = "0";
+            // 
+            // btn_Counter
+            // 
+            this.btn_Counter.BackColor = System.Drawing.Color.SlateBlue;
+            this.btn_Counter.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btn_Counter.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btn_Counter.Location = new System.Drawing.Point(18, 185);
+            this.btn_Counter.Name = "btn_Counter";
+            this.btn_Counter.Size = new System.Drawing.Size(125, 31);
+            this.btn_Counter.TabIndex = 4;
+            this.btn_Counter.Text = "按我加1";
+            this.btn_Counter.UseVisualStyleBackColor = false;
+            this.btn_Counter.Click += new System.EventHandler(this.btn_Counter_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lab_Counter);
+            this.Controls.Add(this.btn_Counter);
+            this.Controls.Add(this.lab_ChangeLabel);
+            this.Controls.Add(this.btn_ChangLabel);
             this.Controls.Add(this.btn_ClickMe);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Red;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -75,6 +132,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_ClickMe;
+        private System.Windows.Forms.Button btn_ChangLabel;
+        private System.Windows.Forms.Label lab_ChangeLabel;
+        private System.Windows.Forms.Label lab_Counter;
+        private System.Windows.Forms.Button btn_Counter;
     }
 }
 
