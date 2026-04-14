@@ -37,5 +37,23 @@ namespace N13310011
             int sum=Int32.Parse(count)+1;
             lab_Counter.Text=sum.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FormBtnBigger().Show();
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String str = textBox1.Text;
+            label2.Text = str;
+
+        }
     }
 }
