@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.btn_Calculator = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -170,12 +171,25 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btn_Calculator
+            // 
+            this.btn_Calculator.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btn_Calculator.ForeColor = System.Drawing.Color.Black;
+            this.btn_Calculator.Location = new System.Drawing.Point(557, 278);
+            this.btn_Calculator.Name = "btn_Calculator";
+            this.btn_Calculator.Size = new System.Drawing.Size(123, 55);
+            this.btn_Calculator.TabIndex = 11;
+            this.btn_Calculator.Text = "計算機";
+            this.btn_Calculator.UseVisualStyleBackColor = true;
+            this.btn_Calculator.Click += new System.EventHandler(this.btn_Calculator_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Calculator);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -208,6 +222,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Calculator;
     }
 }
 

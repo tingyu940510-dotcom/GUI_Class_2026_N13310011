@@ -33,8 +33,8 @@ namespace N13310011
 
         private void btn_Counter_Click(object sender, EventArgs e)
         {
-            String count= lab_Counter.Text;
-            int sum=Int32.Parse(count)+1;
+            String count = lab_Counter.Text;
+            int sum = Int32.Parse(count)+1;
             lab_Counter.Text=sum.ToString();
         }
 
@@ -62,5 +62,11 @@ namespace N13310011
             int sum = Int32.Parse(count)-1;
             lab_Counter.Text=sum.ToString();
         }
+
+        private void btn_Calculator_Click(object sender, EventArgs e)
+        {
+            new FormCalculator().Show();
+        }
     }
+
 }
