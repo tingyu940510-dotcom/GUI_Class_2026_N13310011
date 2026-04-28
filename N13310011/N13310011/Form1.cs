@@ -67,6 +67,16 @@ namespace N13310011
         {
             new FormCalculator().Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormTemperature().Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
