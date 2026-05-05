@@ -22,7 +22,7 @@ namespace N13310011
             String str = this.c.Text;
             double c = double.Parse(this.c.Text);
             double f = c*(9/5.0)+32;
-            label3.Text =f.ToString();
+            label3.Text =f.ToString()+"F";
 
         }
     }
