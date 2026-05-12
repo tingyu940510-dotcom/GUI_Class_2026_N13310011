@@ -19,10 +19,29 @@ namespace N13310011
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = Int32.Parse(textBox1.Text);
-            int b = Int32.Parse(textBox2.Text);
-            int sum = a+b;
-            label3.Text = sum.ToString();
+            try
+            {
+                int[]numbers=new int[10];
+                numbers[0] = 1;
+                numbers[1] = 2;
+                MessageBox.Show(numbers[1].ToString());
+                int a = Int32.Parse(textBox1.Text);
+                int b = Int32.Parse(textBox2.Text);
+                int sum = a+b;
+                label3.Text = sum.ToString();
+            }/*catch(System.FormatException ex)
+            {
+                MessageBox.Show(ex.Message+"輸入的不可以是標點符號，請輸入整數 你媽沒教你嗎?");
+            }/*catch(IndexOutOfRangeException ex) 
+            {
+                MessageBox.Show(ex.Message+"你的陣列爆掉拉!");
+            }*/catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message+"你輸入的有問題 但我不知道是哪裡錯");
+            }
+        }
+
+      
         }
     }
 }
