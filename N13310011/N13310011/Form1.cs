@@ -77,6 +77,11 @@ namespace N13310011
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new FormTimer().Show();
+        }
     }
 
 }

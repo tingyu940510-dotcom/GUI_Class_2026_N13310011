@@ -11,3 +11,4 @@ C:\Users\MEGAS\Desktop\GUI_Class_2026_N13310011\N13310011\N13310011\obj\Debug\N1
 C:\Users\MEGAS\Desktop\GUI_Class_2026_N13310011\N13310011\N13310011\obj\Debug\N13310011.FormBtnBigger.resources
 C:\Users\MEGAS\Desktop\GUI_Class_2026_N13310011\N13310011\N13310011\obj\Debug\N13310011.FormCalculator.resources
 C:\Users\MEGAS\Desktop\GUI_Class_2026_N13310011\N13310011\N13310011\obj\Debug\N13310011.FormTemperature.resources
+C:\Users\MEGAS\Desktop\GUI_Class_2026_N13310011\N13310011\N13310011\obj\Debug\N13310011.FormTimer.resources
