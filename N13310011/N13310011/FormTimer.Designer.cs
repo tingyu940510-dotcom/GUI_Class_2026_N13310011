@@ -34,7 +34,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labCounter2 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // labCounter
@@ -63,6 +64,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "start";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -74,6 +76,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "stop";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -85,23 +88,28 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "retron";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label1
+            // labCounter2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(495, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 64);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "0";
+            this.labCounter2.AutoSize = true;
+            this.labCounter2.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labCounter2.Location = new System.Drawing.Point(495, 94);
+            this.labCounter2.Name = "labCounter2";
+            this.labCounter2.Size = new System.Drawing.Size(57, 64);
+            this.labCounter2.TabIndex = 4;
+            this.labCounter2.Text = "0";
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // FormTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labCounter2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -120,6 +128,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labCounter2;
+        private System.Windows.Forms.Timer timer2;
     }
 }
