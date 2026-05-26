@@ -42,6 +42,8 @@
             this.btn_Calculator = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +99,7 @@
             this.lab_Counter.AutoSize = true;
             this.lab_Counter.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lab_Counter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lab_Counter.Location = new System.Drawing.Point(274, 220);
+            this.lab_Counter.Location = new System.Drawing.Point(598, 56);
             this.lab_Counter.Name = "lab_Counter";
             this.lab_Counter.Size = new System.Drawing.Size(23, 24);
             this.lab_Counter.TabIndex = 5;
@@ -108,7 +110,7 @@
             this.btn_Counter.BackColor = System.Drawing.Color.SlateBlue;
             this.btn_Counter.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Counter.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btn_Counter.Location = new System.Drawing.Point(133, 278);
+            this.btn_Counter.Location = new System.Drawing.Point(477, 114);
             this.btn_Counter.Name = "btn_Counter";
             this.btn_Counter.Size = new System.Drawing.Size(125, 31);
             this.btn_Counter.TabIndex = 4;
@@ -133,7 +135,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Viner Hand ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(568, 147);
+            this.button1.Location = new System.Drawing.Point(18, 310);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 44);
             this.button1.TabIndex = 7;
@@ -146,7 +148,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("標楷體", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(563, 67);
+            this.label2.Location = new System.Drawing.Point(13, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 29);
             this.label2.TabIndex = 8;
@@ -155,7 +157,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(568, 112);
+            this.textBox1.Location = new System.Drawing.Point(18, 275);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 9;
@@ -166,7 +168,7 @@
             this.button2.BackColor = System.Drawing.Color.Purple;
             this.button2.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(309, 276);
+            this.button2.Location = new System.Drawing.Point(633, 112);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 33);
             this.button2.TabIndex = 10;
@@ -178,7 +180,7 @@
             // 
             this.btn_Calculator.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn_Calculator.ForeColor = System.Drawing.Color.Black;
-            this.btn_Calculator.Location = new System.Drawing.Point(557, 278);
+            this.btn_Calculator.Location = new System.Drawing.Point(226, 167);
             this.btn_Calculator.Name = "btn_Calculator";
             this.btn_Calculator.Size = new System.Drawing.Size(123, 55);
             this.btn_Calculator.TabIndex = 11;
@@ -188,7 +190,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(18, 356);
+            this.button3.Location = new System.Drawing.Point(18, 176);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(138, 40);
             this.button3.TabIndex = 12;
@@ -199,7 +201,7 @@
             // button4
             // 
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(324, 360);
+            this.button4.Location = new System.Drawing.Point(226, 231);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 36);
             this.button4.TabIndex = 13;
@@ -207,12 +209,34 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(226, 320);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "CheckBox";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(226, 275);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "Layout";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_Calculator);
@@ -251,6 +275,8 @@
         private System.Windows.Forms.Button btn_Calculator;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
