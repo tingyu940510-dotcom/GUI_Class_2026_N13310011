@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace N13310011
 {
@@ -15,15 +17,17 @@ namespace N13310011
         public FormOderMenu()
         {
             InitializeComponent();
+            if (!File.Exists("OderData.csv")) ;
+            File.WriteAllText("OderData.csv", "時間,主食,配菜,甜點,飲品\n",Encoding.UTF8);
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
+            DateTime currentDataTime = DateTime.Now;
+            string formmattedDataTime= currentDataTime.ToString("yyyy/MM/dd HH:mm:ss");
+            string food = "", sidefood = "", drink = "", dessert = "";
+
             foreach (Control c in panel1.Controls)
             {
                 if (c is CheckBox)
@@ -31,10 +35,9 @@ namespace N13310011
                     CheckBox temp = (CheckBox)c;
                     if (temp.Checked == true)
                     {
-                        MessageBox.Show(temp.Text);
-
+                        //MessageBox.Show(temp.Text);
+                        food = temp.Text;
                     }
-
 
                 }
             }
@@ -45,8 +48,8 @@ namespace N13310011
                     CheckBox temp = (CheckBox)c;
                     if (temp.Checked == true)
                     {
-                        MessageBox.Show(temp.Text);
-
+                        //MessageBox.Show(temp.Text);
+                        sidefood = temp.Text;
                     }
                 }
             }
@@ -57,8 +60,8 @@ namespace N13310011
                     CheckBox temp = (CheckBox)c;
                     if (temp.Checked == true)
                     {
-                        MessageBox.Show(temp.Text);
-
+                        //MessageBox.Show(temp.Text);
+                        dessert = temp.Text;
                     }
                 }
             }
@@ -69,11 +72,14 @@ namespace N13310011
                     CheckBox temp = (CheckBox)c;
                     if (temp.Checked == true)
                     {
-                        MessageBox.Show(temp.Text);
-
+                        //MessageBox.Show(temp.Text);
+                        drink = temp.Text;
                     }
                 }
             }
+            File.AppendAllText("OderData.csv", formmattedDataTime+"," +food + ","+ sidefood+ ","+ drink + ","+ dessert+"\n");
+            MessageBox.Show("點餐完成!製作中請稍後");
+
         }
     }
 }
